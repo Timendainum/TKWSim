@@ -1,0 +1,24 @@
+{
+  "name": "tkwsim",
+  "version": "1.0.0",
+  "description": "Simulation app for TKWv3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timendainum/TKWSim.git"
+  },
+  "author": "Timendainum",
+    "bugs": {
+    "url": "https://github.com/Timendainum/TKWSim/issues"
+  },
+  "homepage": "https://github.com/Timendainum/TKWSim#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "lodash": "^4.17.4",
+    "mysql": "^2.15.0",
+    "winston": "^2.4.0"
+  }
+}

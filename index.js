@@ -29,6 +29,8 @@ DB.init(config, log);
 const Area = require("./lib/Area");
 Area.init(config, log, DB);
 
+const Player = require("./lib/Player");
+Player.init(config, log, DB);
 
 /* *********************************************************************************************************************
  * vars
@@ -80,7 +82,8 @@ function startHeartbeat() {
 function heartbeat(callback) {
 	log.warn("heartbeat");
 	async.series([
-		Area.heartbeat
+		Area.heartbeat,
+		Player.heartbeat
 	], (err) => {
 		if (err) {
 			log.error("heartBeat() error", {err: err});

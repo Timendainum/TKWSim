@@ -26,11 +26,14 @@ const config = require("./config");
 const DB = require("./lib/DB");
 DB.init(config, log);
 
-const Area = require("./lib/Area");
+global.Area = require("./lib/Area");
 Area.init(config, log, DB);
 
-const Player = require("./lib/Player");
+global.Player = require("./lib/Player");
 Player.init(config, log, DB);
+
+global.Character = require("./lib/Character");
+Character.init(config, log, DB);
 
 /* *********************************************************************************************************************
  * vars
